@@ -43,12 +43,15 @@ Before deploying the resources, ensure you have the following:
 
 - An active Azure subscription.
 - Sufficient permissions to create resources in the target subscription.
+- API Client with permissions to on-board to image assessment in Falcon Cloud Security 
 
 ## Deployment Steps
 
 1. Click on the appropriate deployment button above.
 2. Follow the prompts in the Azure portal to complete the deployment.
 
+## Example Output in Runbook
+![alt text](/images/runbookoutput.png)
 ## Post-Deployment
 
 After the deployment is complete, the automation account will run on a schedule. When new Azure Container Registries are found in your subscription they will be on-boarded to Falcon Cloud Security. By default the schedule is set to run every one hour.
